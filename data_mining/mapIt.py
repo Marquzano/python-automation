@@ -11,6 +11,6 @@ else:
     # Get address from clipboard
     address = pyperclip.paste()
 try:
-    webbrowser.open('https:www.google.com/maps/place/' + address)
+    webbrowser.open('https://www.google.com/maps/place/' + address)
 except Exception as exc:
     print('Your request to map has failed due to the following error:\n' + exc)
