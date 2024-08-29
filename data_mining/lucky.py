@@ -10,10 +10,6 @@ res.raise_for_status()
 
 # retrieve top search result links
 soup = bs4.BeautifulSoup(res.text, features='html.parser')
-# print(soup)
-
-# rElems = soup.select('p')
-# print(rElems[0])
 
 # open a browser tab for each result
 # need to determine how to find the search results and not the first hrefs for the first a tags
